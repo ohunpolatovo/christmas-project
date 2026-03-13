@@ -116,12 +116,45 @@ body {
   }
 }
 .navbar-link a:hover {
-  color: red;
+  color: var(--first-color-alt);
 }
 .btn {
   background: none;
 }
 /*hero*/
+.hero {
+  padding-top: 64px;
+  padding-bottom: 56px;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.hero-button {
+  padding: 20px 56px;
+  border-radius: 64px;
+  color: var(--card-color);
+  background-color: var(--first-color);
+}
+
+.hero-text {
+  font-family: var(--fonts);
+  h1 {
+    font-size: 40px;
+    line-height: 140%;
+    margin-bottom: 16px;
+  }
+  p {
+    color: var(--text-color);
+    margin-bottom: 48px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+  }
+}
 
 main {
   flex-grow: 1;
