@@ -74,9 +74,7 @@ html {
 
 body {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-color: var(--body-color);
 }
 /*navbar*/
 .container {
@@ -102,6 +100,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 .navbar-link {
   display: flex;
@@ -153,6 +152,53 @@ body {
     font-weight: 400;
     font-size: 15px;
     line-height: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .hero-img img {
+    width: 450px;
+    height: 408px;
+  }
+  .hero-text h1 {
+    font-size: 30px;
+    height: 130%;
+    color: var(--title-color);
+  }
+}
+@media (max-width: 1025px) {
+  .hero-img img {
+    width: 400px;
+    height: 358px;
+  }
+  .hero-button {
+    padding: 15px 45px;
+  }
+}
+@media (max-width: 925px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .nav-bar .navbar-link a {
+    display: none;
+  }
+  .container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 420px) {
+  .hero-img img {
+    width: 320px;
+    height: auto;
+  }
+  .hero-text h1 {
+    font-size: 20px;
+    height: 100%;
   }
 }
 
